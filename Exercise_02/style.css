@@ -1,0 +1,15 @@
+.container{
+  margin: 0px auto;
+  width: 350px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#value{
+  font-size: 110px;
+  line-height: 140px;
+}
+button{
+  padding: 10px 16px;
+  font-size: 18px;
+}
