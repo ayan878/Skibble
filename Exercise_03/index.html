@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="container">
+      <form name="frmadd">
+        Num1 <input type="text" name="txt1" /><br />
+        Num2 <input type="text" name="txt2" /><br />
+        Result <input type="text" name="txt3" disabled /><br />
+
+        <input type="button" value="+" name="but1" onClick="addNum()" />
+        <input type="button" value="-" name="but2" onClick="subNum()" />
+        <input type="button" value="x" name="but3" onClick="mulNum()" />
+        <input type="button" value="/" name="but4" onClick="divNum()" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
