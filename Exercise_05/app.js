@@ -29,7 +29,20 @@ const Dinner = document.querySelector(".Dinner");
 const btnDinner = document.querySelector(".btnDinner");
 
 btnDinner.addEventListener("click", function () {
-  Dinner.classList.remove("Dinner");
+  Dinner.classList.remove('Dinner');
+  // Dinner.classList.add('Breakfast');
+  // Dinner.classList.add('Lunch');
+  // Dinner.classList.add('Shakes');
   console.log("click");
 });
 
+const All = document.querySelector(".All");
+const btnAll = document.querySelector(".btnAll");
+
+btnAll.addEventListener("click", function () {
+  // All.classList.remove("Dinner");
+  // All.classList.remove('Breakfast');
+  // All.classList.remove('Lunch');
+  // All.classList.remove('Shakes');
+  console.log("click");
+});
