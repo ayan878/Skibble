@@ -110,3 +110,16 @@ h3{
 span{
     color: burlywood;
 }
+
+ .Breakfast {
+  display:none;
+} 
+.Lunch{
+  display: none;
+}
+.Shakes{
+  display: none;
+} 
+.Dinner{
+  display: none;
+}
