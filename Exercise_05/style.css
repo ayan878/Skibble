@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 
-        
+ .Breakfast{
+    display: block;
+ }       
 .imgName{
     position: relative;
     /* color: red; */
