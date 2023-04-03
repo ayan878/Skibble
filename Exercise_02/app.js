@@ -1,6 +1,6 @@
 "use strict";
 
-let output = document.querySelector(".output");
+let output = document.querySelector(".count");
 // output=parseInt(output)
 let count = 0;
 let inc = () => {
