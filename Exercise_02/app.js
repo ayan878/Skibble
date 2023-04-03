@@ -1,29 +1,28 @@
-// set inital value to zero
+"use strict";
+
+let output = document.querySelector(".output");
+// output=parseInt(output)
 let count = 0;
-// select value and buttons
-const value = document.querySelector("#value");
-const btns = document.querySelectorAll(".btn");
+let inc = () => {
+  // count+=1
+  count = count + 1;
+  output.innerHTML = count;
+  if (count <= 1) {
+    output.style.color = "green";
+  }
+};
 
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const styles = e.currentTarget.classList;
-    if (styles.contains("decrease")) {
-      count--;
-    } else if (styles.contains("increase")) {
-      count++;
-    } else {
-      count = 0;
-    }
+let dec = () => {
+  // count+=1
+  count = count - 1;
+  output.innerHTML = count;
+  if ((count) => 0) {
+    output.style.color = "red";
+  }
+};
 
-    if (count > 0) {
-      value.style.color = "green";
-    }
-    if (count < 0) {
-      value.style.color = "red";
-    }
-    if (count === 0) {
-      value.style.color = "#222";
-    }
-    value.textContent = count;
-  });
-});
+let reset = () => {
+  count = 0;
+  output.innerHTML = count;
+  output.style.color = "black";
+};
