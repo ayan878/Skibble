@@ -79,6 +79,7 @@ img{
     border: solid 4px burlywood;
 }
 h3{ 
+  text-transform: capitalize;
     border-bottom: dotted 1px grey;
     letter-spacing: 2px;
     margin-bottom: 8px;
