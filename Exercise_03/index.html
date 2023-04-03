@@ -9,15 +9,14 @@
 </head>
   <body>
     <div class="container">
-      <form name="frmadd">
-        Num1 <input type="text" name="txt1" /><br />
-        Num2 <input type="text" name="txt2" /><br />
-        Result <input type="text" name="txt3" disabled /><br />
-
-        <input type="button" value="+" name="but1" onClick="addNum()" />
-        <input type="button" value="-" name="but2" onClick="subNum()" />
-        <input type="button" value="x" name="but3" onClick="mulNum()" />
-        <input type="button" value="/" name="but4" onClick="divNum()" />
+      <form name="calc">
+        Num1 <input class="num1" type="text" name="txt1" /><br />
+        Num2 <input class="num2" type="text" name="txt2" /><br />
+        Result <input class="res" type="text" name="txt3" disabled /><br />
+        <input class="addNum" type="button" value="+" name="but1" />
+        <input class="subNum" type="button" value="-" name="but2" />
+        <input class="mulNum" type="button" value="x" name="but3" />
+        <input class="divNum" type="button" value="/" name="but4" />
       </form>
     </div>
     <script src="app.js"></script>
