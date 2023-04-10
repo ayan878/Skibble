@@ -21,16 +21,16 @@ body {
 
 }
 #caption{
-    /* margin-top: .2rem; */
+    margin-top: .5rem;
     font-size:1rem;
-    color: gray;
-    /* font-weight: bold; */  
+    
+    font-weight: bold;  
 }
 #img-caption{
-    /* margin-top: .2rem; */
+    
     font-size:1rem;
     color: gray;
-    /* font-weight: bold; */
+
 }
 #img-div{
   max-width: 600px;
