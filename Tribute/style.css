@@ -4,12 +4,13 @@ body {
 }
 
 #main {
-  max-width: 1280px;
+  max-width: 700px;
   max-height: 100%;
   margin: 30px 40px;
   padding: 15px;
   /* background-color: #dddddd; */
   border-radius: 5px;
+  border: solid 5px black;
 }
 
 #title {
@@ -33,7 +34,7 @@ body {
 
 }
 #img-div{
-  max-width: 600px;
+  max-width: 700px;
   
   /* padding: 15px; */
   background-color: #ffffff;
@@ -50,7 +51,7 @@ body {
 
 #tribute-info {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 700px;
   /* margin: 0 auto; */
 }
 
@@ -71,7 +72,39 @@ font-weight: bold;
   margin-bottom: 10px;
   line-height: 30px;
 }
-
-h5{
+/* h5{
    text-align: center;
+} */
+
+aside{
+  max-width: 460px;
+  max-height: 100%;
+  /* max-width: 100px; */
+  margin-left: 40px;
+  /* size-adjust: auto; */
 }
+aside img{
+  margin-right: 12px;
+  max-width: 250px;
+  max-height: 100%;
+}
+article{
+  
+  display: flex;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+article a{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.row {
+	  display: flex;
+	}
+	.column {
+    font-size: .8rem;
+	  flex: 50%;
+	  /* padding: 16px; */
+	  /* height: 250px; */
+	}
