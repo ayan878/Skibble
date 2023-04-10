@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 * {
@@ -7,46 +6,33 @@
   box-sizing: border-box;
 }
 
- .Breakfast{
-    display: block;
- }       
-.imgName{
-    position: relative;
-    /* color: red; */
-    left: 55px;
-    top: 15px;
-}
 body {
-margin: 2rem;
+  margin: 2rem;
   font-family: "Roboto", sans-serif;
   background-color: #f5f7f8;
   color: #000;
 }
 .menu-header {
-    
   /* border: solid 2px #000; */
   width: 50%;
-  margin: 100px auto;
+  margin: 10px auto;
   margin-bottom: 10px;
-  
 }
 h2 {
-
   text-align: center;
   text-decoration: solid;
   /* margin: 2rem 0; */
   font-size: 2.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-.underline{
-    margin: 0 auto;
-    width: 8rem;
-    margin-bottom: 2rem;
-    border-bottom:solid .3rem burlywood;
+.underline {
+  margin: 0 auto;
+  width: 8rem;
+  margin-bottom: 2rem;
+  border-bottom: solid 0.3rem burlywood;
 }
 
 .btn-box {
- 
   margin: 0 auto;
   margin-bottom: 2rem;
   display: flex;
@@ -60,73 +46,64 @@ h2 {
   text-transform: capitalize;
   padding: 0.6rem 1rem;
   align-items: center;
-  
   margin-right: 1rem;
   border: solid 2px burlywood;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   color: burlywood;
-  background-color:#fff;
+  background-color: #fff;
 }
-.btn:hover{
-    background-color: burlywood;
-    color:#f5f7f8;
+.btn:hover {
+  background-color: burlywood;
+  color: #f5f7f8;
 }
-img{
-    margin: 12px;
-    width: 200px;
-    height: 150px;
-    border-radius: .4rem;
-    border: solid 4px burlywood;
+img {
+  /* margin: 12px; */
+  width: 250px;
+  height: 150px;
+  border-radius: 0.4rem;
+  border: solid 4px burlywood;
 }
-h3{ 
+h3 {
   text-transform: capitalize;
-    border-bottom: dotted 1px grey;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
+  border-bottom: dotted 1px grey;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.column, .menuItem {
+.column,
+.menuItem {
   display: grid;
-  grid-template-columns: repeat(2, 4fr);
-}
-.row{
-
-    /* border:3px solid #000; */
-    display: flex;
-    
-}
-.desc{
-    /* background-color: beige; */
-
-    padding: 8px;
-    /* border: solid 4px blue; */
-    /* display: inline-block; */
-    
-}
-.desc p{
-    color: grey;
-    font-size: 1rem;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 2fr);
 }
 
-.price{
-    color: burlywood;
+.desc {
+  /* background-color: beige; */
+
+  padding: 8px;
+  /* border: solid 4px blue; */
+  /* display: inline-block; */
+}
+.desc p {
+  color: grey;
+  font-size: 1rem;
 }
 
- .Breakfast {
-  display:none;
-} 
-.Lunch{
+.price {
+  color: burlywood;
+}
+
+.Breakfast {
   display: none;
 }
-.Shakes{
-  display: none;
-} 
-.Dinner{
+.Lunch {
   display: none;
 }
-
-
-
-
+.Shakes {
+  display: none;
+}
+.Dinner {
+  display: none;
+}
