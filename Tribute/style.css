@@ -6,11 +6,15 @@ body {
 #main {
   max-width: 700px;
   max-height: 100%;
-  margin: 30px 40px;
+  margin-top:04px ;
+  margin: 04px 40px;
   padding: 15px;
+  float: left;
+  /* width: 70%; */
   /* background-color: #dddddd; */
   border-radius: 5px;
-  border: solid 5px black;
+  /* border: solid 2px black; */
+  /* position: absolute; */
 }
 
 #title {
@@ -68,43 +72,68 @@ font-weight: bold;
   text-align: center;
 }
 
-#tribute-info > ul li {
-  margin-bottom: 10px;
-  line-height: 30px;
-}
-/* h5{
-   text-align: center;
-} */
-
-aside{
+.sidebar{
+  /* float: left; */
+  position: absolute;
+  left:60%;
   max-width: 460px;
   max-height: 100%;
   /* max-width: 100px; */
   margin-left: 40px;
   /* size-adjust: auto; */
 }
-aside img{
+.sidebar img{
   margin-right: 12px;
   max-width: 250px;
   max-height: 100%;
 }
-article{
-  
-  display: flex;
-  border: 2px solid black;
-  margin-bottom: 10px;
-}
-article a{
-  font-weight: bold;
-  text-decoration: none;
-}
 
+#MohammadAli {
+
+  max-height: 100%;
+  margin: 30px 50px;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 2px black;
+}
 .row {
 	  display: flex;
 	}
 	.column {
     font-size: .8rem;
 	  flex: 50%;
-	  /* padding: 16px; */
-	  /* height: 250px; */
 	}
+.Signature img{
+  max-width: 200px;
+  margin-left:55px;
+}
+.more {
+/* border:2px solid black; */
+  max-width:460px;
+  /* max-height: 100%; */
+  margin-right: 50px;
+  margin-left: 50px;
+}
+article{  
+  width: 100%;
+  display:block;
+  /* border: 2px solid black; */
+  margin-bottom: 10px;
+  margin-right: 60px;
+}
+
+article a{
+  padding: 0.5rem;
+  margin-left: .2rem;
+  font-weight: bold;
+  font-size: small;
+  text-decoration: none;
+}
+ article img{
+  /* border: 2px solid red; */
+  width: 360px;
+  height: 200px;
+  
+  /* height: 200px; */
+  /* background-color: #000; */
+ } 
