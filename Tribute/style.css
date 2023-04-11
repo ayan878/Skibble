@@ -137,3 +137,8 @@ article a{
   /* height: 200px; */
   /* background-color: #000; */
  } 
+@media screen and (max-width: 600px) {
+.sidebar{
+  display: none;
+}
+}
