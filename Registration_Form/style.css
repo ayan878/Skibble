@@ -21,6 +21,7 @@ body, button, input {
 }
 
 .container {
+  
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
@@ -374,31 +375,6 @@ body, button, input {
   flex-direction: column;
 }
 
-.app-title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #ea1d6f;
-  font-size: 26px;
-}
-
-.app-title:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 25px;
-  height: 4px;
-  background: #ea1d6f;
-}
-
-.app-contact {
-  margin-top: auto;
-  font-size: 8px;
-  color: #888;
-}
-
 .app-form-group {
   margin-bottom: 15px;
 }
@@ -480,17 +456,6 @@ body, button, input {
     margin-bottom: 30px;
   }
 
-  .app-title {
-    flex-direction: row;
-  }
-
-  .app-title span {
-    margin-right: 12px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 600px) {
