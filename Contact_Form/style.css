@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,8 +11,10 @@ body {
   font-size: 12px;
 }
 
-body, button, input {
-  font-family: 'Montserrat', sans-serif;
+body,
+button,
+input {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
@@ -33,7 +37,7 @@ body, button, input {
 }
 
 .screen:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -41,7 +45,7 @@ body, button, input {
   right: 20px;
   bottom: 0;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -114,7 +118,7 @@ body, button, input {
 }
 
 .app-title:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -130,6 +134,12 @@ body, button, input {
   color: #888;
 }
 
+.app-logo {
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  left: 14px;
+}
 .app-form-group {
   margin-bottom: 15px;
 }
@@ -153,7 +163,7 @@ body, button, input {
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .app-form-control::placeholder {
@@ -183,7 +193,7 @@ body, button, input {
   align-items: center;
   margin-top: 20px;
   color: #ffa4bd;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: normal;
 }
@@ -196,7 +206,7 @@ body, button, input {
   text-decoration: none;
 }
 
-.dribbble {
+.svg-icon {
   width: 20px;
   height: 20px;
   margin: 0 5px;
@@ -221,6 +231,12 @@ body, button, input {
 
   .app-title:after {
     display: none;
+  }
+  .app-logo {
+    width: 40px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
   }
 }
 
