@@ -1,3 +1,10 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -10,15 +17,7 @@ body {
   margin: 04px 40px;
   padding: 15px;
   float: left;
-  /* width: 70%; */
-  /* background-color: #dddddd; */
-  border-radius: 5px;
-  /* border: solid 2px black; */
-  /* position: absolute; */
-}
-
-#title {
-  /* text-align: center; */
+  border-radius: 5px; 
 }
 
 #main > p {
@@ -108,35 +107,33 @@ font-weight: bold;
   margin-left:55px;
 }
 .more {
-/* border:2px solid black; */
-  max-width:460px;
-  /* max-height: 100%; */
   margin-right: 50px;
   margin-left: 50px;
 }
-article{  
+
+.story-img{
+  width: 350px;
+  height: 216px;
+
+}
+.story-img img{
   width: 100%;
-  display:block;
-  /* border: 2px solid black; */
-  margin-bottom: 10px;
-  margin-right: 60px;
+  height: 100%;
 }
 
-article a{
-  padding: 0.5rem;
-  margin-left: .2rem;
+.story a{
+  
   font-weight: bold;
   font-size: small;
   text-decoration: none;
+} 
+.cp-text{
+  font-size: 1rem;
+  margin-left:50px ;
+  position: absolute;
+  top: 2400px;
+  /* bottom: .2px; */
 }
- article img{
-  /* border: 2px solid red; */
-  width: 360px;
-  height: 200px;
-  
-  /* height: 200px; */
-  /* background-color: #000; */
- } 
 @media screen and (max-width: 600px) {
 .sidebar{
   display: none;
