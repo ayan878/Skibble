@@ -239,6 +239,10 @@ input {
     left: 10px;
   }
 }
+.error{
+  color: #b9134f;
+  font-size: .6rem;
+}
 
 @media screen and (max-width: 600px) {
   .screen-body {
