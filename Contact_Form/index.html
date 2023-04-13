@@ -34,24 +34,28 @@
           </div>
         </div>
         <div class="screen-body-item">
-          <div class="app-form">
+          <form class="app-form">
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME">
+              <input class="app-form-control Name" placeholder="NAME" required>
+              <span class="error errorName"></span>
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL">
+              <input class="app-form-control Email" placeholder="EMAIL" required>
+              <span class="error errorEmail"></span>
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO">
+              <input class="app-form-control Contact" placeholder="CONTACT NO" required>
+              <span class="error errorContact"></span>
             </div>
             <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE">
+              <input class="app-form-control Message" placeholder="MESSAGE" required>
+              <span class="error errorMessage"></span>
             </div>
             <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
+              <button class="app-form-button btnCancel">CANCEL</button>
+              <button class="app-form-button btnSend">SEND</button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -71,6 +75,6 @@
     </footer>
   </section>
     </main>
-
+<script src="app.js"></script>
 </body>
 </html>
