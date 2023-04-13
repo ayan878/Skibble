@@ -16,24 +16,25 @@ const cancel = function () {
 btnCancel.addEventListener("click", cancel);
 
 const send = function(){
-  var name = document.querySelector(".Name").value;
-  var email= document.querySelector('.Email').value;
-  var contact=document.querySelector('.Contact').value;
-  var message=document.querySelector(".Message").value;
-  if (name === "") {
+//   var name = document.querySelector(".Name").value;
+//   var email= document.querySelector('.Email').value;
+//   var contact=document.querySelector('.Contact').value;
+//   var message=document.querySelector(".Message").value;
+  if (name.value === "") {
     document.querySelector(".errorName").innerHTML =
       "**Please fill the name field";
 
+
    }
-  else if (email === "") {
+  else if (email.value === "") {
     document.querySelector(".errorEmail").innerHTML =
      "**Please fill the email field";
    } 
-  else if ( contact === "") {
+  else if ( contact.value === "") {
     document.querySelector(".errorContact").innerHTML =
       "**Please fill the contact field";
  }
- else if (message === "") {
+ else if (message.value === "") {
     document.querySelector(".errorMessage").innerHTML =
       "**Please fill the username field";
   } 
