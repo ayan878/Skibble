@@ -29,7 +29,10 @@ const submit = function () {
         // document.querySelector('.errorPassword').innerHTML="Password not match";
     }
     else {
-      alert("Submited");
+      window.location.href =
+        "https://learn.skibble.tech/s/courses/642eae3be4b04cea7b3462c2/take";
+      // alert("Submited");
+      
     }
 };
 btnSignup.addEventListener("click", submit);
