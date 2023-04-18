@@ -1,42 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
 html {
   font-size: 22px;
 }
 body {
-    /* <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet"> */
-font-family: 'Bonheur Royale', cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 1.5rem;
+  height: 100vh;
 }
 
 * .header {
-  margin: 10px auto;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  grid-area: header;
+  /* background-color: #fed330; */
+  /* padding: 20px; */
 }
 h1 {
   text-align: center;
-   background: -webkit-linear-gradient(rgba(234, 246, 3, 0.597), #F00);
+  background: -webkit-linear-gradient(rgba(234, 246, 3, 0.597), #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-family: "Bonheur Royale", cursive;
 }
 .underline {
   margin: 0 auto;
   width: 8rem;
-  margin-bottom: 2rem;
-  border-bottom: 8px solid rgb(255, 119, 0)
+  margin-bottom: 1rem;
+  border-bottom: 8px solid rgb(255, 119, 0);
 }
 
-.grid {
+aside {
+  display: grid;
+  border: 2px solid black;
+  grid-area: sidebar;
+  /* width: 100%; */
+  height: 600px;
+  background: rgb(243, 240, 237);
+  padding: 30px 0px;
+  position: absolute;
+  /* left: -200px; */
+  /* display:; */
+}
+
+/* sidebar */
+
+.sidebar-header {
+  display: flex;
+}
+
+.sidebar h2 {
+  background: -webkit-linear-gradient(rgba(234, 246, 3, 0.597), #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Bonheur Royale", cursive;
+}
+.menuBtn {
+  margin: 0 10px;
+}
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(46, 50, 50, 0.05);
+}
+.sidebar ul li a {
+  color: #bdb8d7;
+  display: block;
+}
+
+.sidebar ul li a .fas {
+  width: 25px;
+}
+
+.sidebar ul li:hover {
+  background-color: #594f8d;
+}
+
+.sidebar ul li:hover a {
+  color: #fff;
+  padding-left: 12px;
+}
+
+.sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  bottom: 6%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.sidebar .social_media a {
+  display: block;
+  width: 30px;
+  background: #594f8d;
+  height: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 2px;
+  color: #bdb8d7;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 0.5px rgb(97, 93, 100);
+}
+
+@media (max-height: 500px) {
+  .social_media {
+    display: none !important;
+  }
+}
+
+/* sidebar end */
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    "sidebar  header "
+    "sidebar content"
+    "sidebar  footer";
 }
+.content {
+  border: 2px solid black;
+  grid-area: content;
+  /* background-color: #20bf6b; */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* .rows{
+    display: grid;
+    grid-template-rows: 50%;    
+    border: 2px solid black;
+
+} */
+/* .columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid black;
+  
+} */
 .items {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   height: 8rem;
   border-radius: 8px;
   box-shadow: 5px 5px 12px 0.5px rgb(97, 93, 100);
@@ -46,17 +169,36 @@ h1 {
   width: 100%;
   height: 100%;
 }
+footer {
+  padding: 20px;
+  grid-area: footer;
+  background-color: #fd9644;
+}
 
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
-  .grid {
+  .content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
+  .content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+/* @media (max-width: 599px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    width: 600px;
+  }
+  .wrapper {
+    max-width: 512px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 100%;
+    grid-template-areas: " header", "content";
+  }
+} */
