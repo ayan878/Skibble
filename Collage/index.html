@@ -13,41 +13,64 @@
       <header class="header">
         <h1>Royal Menu</h1>
         <div class="underline"></div>
+        <div class="btnbox-top">
+          <button class="btn btnAll">All</button>
+          <button class="btn btnBreakfast">Breakfast</button>
+          <button class="btn btnLunch">Lunch</button>
+          <button class="btn btnShakes">Shakes</button>
+          <button class="btn btnDinner">Dinner</button>
+        </div>
       </header>
       <!-- sidebar -->
-      <aside class="btn-box">
+      <aside class="">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
         <div class="sidebar">
           <div class="sidebar-header">
-            <a class="sidebar-menuBtn"
+            <a class="sidebar-menuBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44"
+                height="48"
+                fill="rgb(255, 119, 0)"
+                viewBox="0 0 256 256"
               >
-             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="48" fill="rgb(255, 119, 0)" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></a>
+                <path
+                  d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                ></path></svg
+            ></a>
             <h3>Zayka</h3>
           </div>
-
-          <ul>
+<!-- 
+          <ul class="btn-box">
             <li>
-              <a href="#"><i class="fas fa-home"></i>Home</a>
+              <a href="#"><i class="fas btn btnAll"></i>Home</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-user"></i>Profile</a>
+              <a href="#"><i class="fas btn btnBreakfast"></i>Breakfast</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-address-card"></i>About</a>
+              <a href="#"><i class="fas btn btnLunch"></i>Lunch</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-project-diagram"></i>Category</a>
+              <a href="#"><i class="fas btn btnShakes"></i>Shakes</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-blog"></i>Blogs</a>
+              <a href="#"><i class="fas btn btnDinner"></i>Dinner</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-address-book"></i>Contact</a>
+              <a href="#"><i class="fas btn btnContact"></i>Contact</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-map-pin"></i>Map</a>
+              <a href="#"><i class="fas btn btnMap"></i>Map</a>
             </li>
-          </ul>
+          </ul> -->
+         <div class="btn-box">
+          <button class="btn btnAll">Home</button>
+          <button class="btn btnBreakfast">Breakfast</button>
+          <button class="btn btnLunch">Lunch</button>
+          <button class="btn btnShakes">Shakes</button>
+          <button class="btn btnDinner">Dinner</button>
+        </div>
           <div class="social_media">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -57,54 +80,57 @@
       </aside>
 
       <!-- hero -->
-      <article class="content">
-        <div class="rows ">
-          <div class="items">
+      <article class="content menuItem">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-1.jpeg" alt="" />
           </div>
           <div class="desc">
-            <h4>Buttermilk Pancakes
-            <span class="price">$15.99</span></h4>
+            <h4>Buttermilk Pancakes <span class="price">$15.99</span></h4>
             <p class="item-text">
-              I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed
+              I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+              freegan copper mug whatever cold-pressed
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-2.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>Dinner Double <span class="price">$13.99</span></h4>
             <p class="item-text">
-              vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats
+              vaporware iPhone mumblecore selvage raw denim slow-carb leggings
+              gochujang helvetica man braid jianbing. Marfa thundercats
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-3.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>Godzilla MilkShake <span class="price">$6.99</span></h4>
             <p class="item-text">
-              ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.
+              ombucha chillwave fanny pack 3 wolf moon street art photo booth
+              before they sold out organic viral.
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-4.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>Country Delight <span class="price">$20.99</span></h4>
             <p class="item-text">
-              Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,
+              Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism
+              austin mlkshk truffaut,
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-5.jpeg" alt="" />
           </div>
           <div class="desc">
@@ -115,155 +141,160 @@
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-6.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>Oreo Dream <span class="price">$18.99</span></h4>
             <p class="item-text">
-              Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday
+              Portland chicharrones ethical edison bulb, palo santo craft beer
+              chia heirloom iPhone everyday
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-7.jpeg" alt="" />
           </div>
           <div class="desc">
-            <h4>Bacon Overflow</h4>
-            <span class="price">$8.99</span>
+            <h4>Bacon Overflow
+            <span class="price">$8.99</span></h4>
             <p>
-              carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird
+              carry jianbing normcore freegan. Viral single-origin coffee
+              live-edge, pork belly cloud bread iceland put a bird
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-8.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>American Classic <span class="price">$12.99</span></h4>
             <p>
-              on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut
+              on it tumblr kickstarter thundercats migas everyday carry squid
+              palo santo leggings. Food truck truffaut
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-9.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>quarantine buddy <span class="price">$16.99</span></h4>
             <p>
-              skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.
+              skateboard fam synth authentic semiotics. Live-edge lyft af,
+              edison bulb yuccie crucifix microdosing.
             </p>
           </div>
         </div>
-        <div class="rows ">
-          <div class="items">
+        <div class="rows">
+          <div >
             <img class="photo" src="images/item-10.jpeg" alt="" />
           </div>
           <div class="desc">
             <h4>bison steak <span class="price">$22.99</span></h4>
             <p class="t">
-              skateboard fam synth authentic semiotics. Live-edge lyft af,edison bulb yuccie crucifix microdosing.
+              skateboard fam synth authentic semiotics. Live-edge lyft af,edison
+              bulb yuccie crucifix microdosing.
             </p>
           </div>
         </div>
         <!-- <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-1.jpeg" alt="" />
             </div>
             <div class=""></div>
           </div>
 
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-2.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-3.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-4.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-5.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-6.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-7.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-8.jpeg" alt="" />
             </div>
           </div>
 
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-9.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-10.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-1.jpeg" alt="" />
             </div>
           </div>
           <div class="rows">
-            <div class="items">
+            <div >
               <img class="img" src="images/item-2.jpeg" alt="" />
             </div>
           </div>
          -->
 
-        <!-- <div class="items">
+        <!-- <div >
           <img class="img" src="images/item-3.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-4.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-5.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-6.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-7.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-8.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-9.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-10.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-1.jpeg" alt="" />
         </div>
-        <div class="items">
+        <div >
           <img class="img" src="images/item-7.jpeg" alt="" />
         </div> -->
       </article>
