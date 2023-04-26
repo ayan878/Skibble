@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgb(15 23 42);
+      }
+      input,
+      button, div {
+        width: 300px;
+        margin: 4px;
+        border: none;
+        height: 42px;
+        padding: 0px;
+        font-size: 22px;
+        text-align: center;
+        border-radius: 4px;
+      }
+      button {
+        background-color: rgb(255, 189, 76);
+        color: rgb(124 45 18);
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      div{
+        background-color: rgb(100, 255, 76);
+        color: rgb(124 45 18);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="state" placeholder="Enter Name" />
+    <button id="Btn">Greet</button>
+    <div id="Output"></div>
+    <script>
+              //Greet user
+               const output = document.getElementById('Output')
+               const input=document.getElementById('state');
+               const btn =document.getElementById('Btn');
+
+               function fun(){
+                output.innerHTML= input.value;
+                console.log('click');
+                
+               }
+              btn.addEventListener('click', fun);
+
+    </script>
+  </body>
+</html>
