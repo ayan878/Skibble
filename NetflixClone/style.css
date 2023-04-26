@@ -1,4 +1,7 @@
 /* CSS VARIABLES */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 :root {
   --primary: #141414;
   --light: #F3F3F3;
@@ -12,7 +15,7 @@ html, body {
   padding: 0;
   background-color: var(--primary);
   color: var(--light);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Kanit', sans-serif;
   box-sizing: border-box;
   line-height: 1.4;
 }
@@ -277,9 +280,5 @@ footer {
     text-align: center;
     font-size: 15px;
   }
-
-  
-
-  
    
 }
