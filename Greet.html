@@ -39,22 +39,32 @@
         cursor: pointer;
       }
       div{
-        background-color: rgb(100, 255, 76);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /* background-color: rgb(100, 255, 76); */
         color: rgb(124 45 18);
+        /* height: 100px; */
+        text-transform: capitalize;
+        color: blueviolet;
+        font-size: 32px;
       }
     </style>
   </head>
   <body>
+
+    <div id="Display"></div>
+    <div id="Output"></div>
+
     <input type="text" id="state" placeholder="Enter Name" />
     <button id="Btn">Greet</button>
-    <div id="Output"></div>
     <script>
               //Greet user
                const output = document.getElementById('Output')
                const input=document.getElementById('state');
                const btn =document.getElementById('Btn');
+               const display=document.getElementById('Display');
 
                function fun(){
+                display.innerHTML = '🎇Congratulation🎇';
                 output.innerHTML= input.value;
                 console.log('click');
                 
