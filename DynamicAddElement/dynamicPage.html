@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dynamicPage</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Passenger Details</h1>
+    <button class="addBtn">Add Passenger</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Serial No.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Berth Preference</th>
+          <th>Nationality</th>
+          <th>Senior Citizen</th>
+        </tr>
+      </thead>
+      <tbody class="passengers">
+        <tr class="AddItems">
+          <td>1</td>
+          <td><input type="text" name="passenger-name" /></td>
+          <td><input type="number" name="passenger-age" /></td>
+          <td>
+            <select name="passenger-sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+          <td>
+            <select name="passenger-berth">
+              <option value="upper">Upper</option>
+              <option value="middle">Middle</option>
+              <option value="lower">Lower</option>
+              <option value="side-upper">Side Upper</option>
+              <option value="side-lower">Side Lower</option>
+            </select>
+          </td>
+          <td>
+            <select id="nationality" name="nationality">
+              <option value="afghan">India</option>
+              <option value="afghan">Afghanistan</option>
+              <option value="albanian">Albanian</option>
+              <option value="algerian">Algerian</option>
+              <option value="american">American</option>
+              <option value="andorran">Andorran</option>
+            </select>
+          </td>
+          <td><input type="checkbox" name="passenger-citizen" /></td>
+        </tr>
+        <!-- Add more rows for additional passengers as needed -->
+      </tbody>
+    </table>
+    <script>
+    const addBtn = document.querySelector(".addBtn");
+    const Passenger=document.querySelector('.passengers');
+    const additems =document.querySelector('.AddItems')
+   
+      function addPassenger() {
+         let cloneAdditems =additems.cloneNode(true);
+        // Passenger.appendChild(cloneAdditems);
+        document.querySelector(".passengers").appendChild(cloneAdditems);
+        console.log("clicked");
+      }
+      addBtn.addEventListener('click',addPassenger);
+    </script>
+  </body>
+</html>
